@@ -59,3 +59,53 @@ def num_Print(n):
 
 sum = num_Print(3)
 print(sum(2))
+
+#  area of circle
+
+
+
+def area_of_circle( radius , pie= 3.14):
+    area = pie * radius*radius
+    print ("Area:",area)
+
+area_of_circle( 6 )
+
+
+# defult values passage
+def nameing(fname, lname = " bhattrai"):
+    print(fname + " "+  lname)
+
+nameing("shrya")
+nameing("subash"," thapa")
+
+# multiple selection arguments with list index
+def kids(*kids):
+    print("the middle kid is",kids[3])
+
+kids("bijay","kristina","subham","shradha")
+
+# double arguments uses dictionary value 
+
+def names(**args):
+    print ("the last name is", args["lname"])
+
+names(fname = "bijay", lname = "chaudhary")
+
+
+# dictionary
+obj = {
+    "name":"asd", 
+    "address": "tilottma "
+}
+print(obj)
+
+def fun_myfun(**x):
+    print(x["x"])
+
+fun_myfun(x = 2)
+
+def multiple(*a):
+    print(a[0])
+
+multiple(3)
+
