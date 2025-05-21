@@ -121,4 +121,57 @@ print(nepalCan)
 nepalCan = [circ  for circ in data if "d" in circ]
 print(nepalCan) 
 
+# sorting a list 
+
+numeric_Value = [34,54,65,32,12,45,78,98]
+# the sort method sorts the list in ascending order as a defult output 
+numeric_Value.sort()
+print(numeric_Value)
+
+# sorts the string values
+string_Value =["fiber","liber","driver", "triber", "avier"]
+string_Value.sort()
+print(string_Value)
+
+# we cannot sort the numerica and string value
+
+# in decending number
+# inbuilt sort function
+# so reverse if it is true it arrange the elements in decending order
+string_Value.sort(reverse = True)
+print(string_Value)
+
+numeric_Value.sort(reverse= True)
+print(numeric_Value)
+
+
+#  function to print the values near to 50
+def function (n):
+    return abs(n - 50)
+thisList = [100, 50, 80,22, 40]
+thisList.sort( key = function)
+print(thisList)
+
+# while sorting the elements that are in string is case sensative 
+
+string = ["tiger","apple","Ball", "Elephent"]
+string.sort(key = str.lower)
+print(string)
+
+#  copy the list 
+
+car = ["hero", "BMW", "Mercedes","lamborgini"]
+# use copy inbuilt function to copy a list
+# newCar = car.copy()
+
+# using slice operator we can copy the list
+newCar = car[:]
+print("new car is:",newCar)
+
+
+
+
+
+
+
 
