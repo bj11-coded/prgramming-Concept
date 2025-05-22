@@ -33,3 +33,36 @@ print(std.items())
 
 if "study" in std:
     print("yes there are students")
+
+#  changing the items
+
+person = {
+    "name":"shyam",
+    "age":"12",
+    "address":"taxes ",
+    "phone":"980000"
+}
+
+print(person)
+
+# changing the value 
+# directly target the key for changing the specific value
+person["address"]= "tilottma"
+
+# update the value
+# update method is used to update the value using key
+person.update({"phone":"9821430781"})
+
+print(person)
+
+
+
+# Add items in dictionary
+person["year"] = "2025"
+
+# using update to add different key
+# we cannot add any key until an unless it is different from existing key
+person.update({"klass":"10"})
+print(person)
+
+
