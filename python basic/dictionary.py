@@ -65,4 +65,79 @@ person["year"] = "2025"
 person.update({"klass":"10"})
 print(person)
 
+# pop 
+person.pop("year")
+print(person)
 
+#  popitem elements last index
+person.popitem()
+print(person)
+
+
+# del person
+# print(person)
+
+
+# clear 
+# person.clear()
+# print(person)
+
+
+# loop in dictionary
+# if we print x in person x shows the key and if we print dictionary with x we get the value
+for x in person:
+    print(x ,":",person[x])
+
+
+#  if we have to print the value directly we can use value() method in dictionary
+for x in person.values():
+    print(x)
+
+# if we have to print the keys in dictionary we can use .keys() method
+for x in person.keys():
+    print(x)
+
+# if we have to print both the keys and values we can use items() method
+for x, y in person.items():
+    print(x ,":", y)
+
+
+
+# copy dictionary 
+# we can copy the same dictionary to another dictionary
+newPerson = person.copy()
+print("newPerson Dictionary",newPerson)
+
+# using dictionary constructor
+newPerson = dict(person)
+print("newPerson:", newPerson)
+
+
+students ={
+    "name":"biajy",
+    "address":{
+        "ward": 5,
+        "muncipality":"tilottma",
+        "locality":{
+            "path":"kailash path",
+            "localName":"manigram"
+        }
+    },
+    "rollNo":{
+        "classRollNo":21,
+        "symbolno":3221230,
+        "registeration":"230sfs323"
+    }
+
+}
+
+# accesing the nested dictionary value using the key one after anotehr
+print("path:",students["address"]["locality"]["path"])
+
+# using loop to access the data 
+
+for x, obj in students.items():
+    print(obj)
+
+    for y in obj:
+        print(y )
