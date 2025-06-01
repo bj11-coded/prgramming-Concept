@@ -92,6 +92,75 @@ print(hero2)
 # child class CatBehaviour: behaviour = aggrasive
 
 
+# iterators 
+# iterators are used to iterate over a collection of data
+# iter is used to create an iterator object
+# next is used to iterate over the iterator object one by one
+# iterators are used to iterate over a collection of data
+mytuple = (1, 2, 3, 4, 5)
+myit = iter(mytuple)
+print(next(myit))
+print(next(myit))
+print(next(myit))
+print(next(myit))
+
+print("---")
+#  for loop lterator
+# for loop is used to iterate over a collection of data
+list = [1,2,3,4,5,6]
+for i in list:
+    print(i)
+
+
+# iterator in object 
+# class Number():
+#     def __init__(self, start, end):
+#         self.current = start
+#         self.end = end
+
+#     def __iter__(self):
+#         return self
+
+#     def __next__(self):
+#         if self.current > self.end:
+#             raise StopIteration
+#         else:
+#             num = self.current
+#             self.current += 1
+#             return num
+
+# nums = Number(1, 10)
+# iter_nums = iter(nums)
+
+# print(next(iter_nums))
+# print(next(iter_nums))
+# print(next(iter_nums))
+    
+
+class Numbers:
+    def __iter__ (self):
+        self.current = 1 
+        return self
+    
+    def __next__(self):
+        x = self.current
+        self.current += 1
+        return x
+    
+myclass = Numbers()
+myiter = iter(myclass)
+
+# litera doesnot print the value until we call next function
+print(next(myiter))
+print(next(myiter))
+print(next(myiter))
+
+
+# print the value from  99 to 88 using iterator
+
+
+
+
 
 
 
