@@ -1,13 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <title>Build Name</title>
+  <style>
+    body {
+      font-family: monospace;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #name {
+      font-size: 32px;
+      color: darkgreen;
+      letter-spacing: 4px;
+    }
+  </style>
 </head>
 <body>
-    this is about page
-    <p> This page is about the HTML structure and its elements.</p>  
-    <a href="./index.html"> Home</a> 
+
+<h2>Building Your Name:</h2>
+<div id="name"></div>
+
+<script>
+  let text = "abcdefghijklmnopqrstuvwxyz";
+  let userInput = prompt("Enter your name:").toLowerCase();
+  let nameDisplay = document.getElementById("name");
+
+  async function buildName(userInput, text) {
+    let matchedName = "";
+
+    for (let i = 0; i < userInput.length; i++) {
+      let currentChar = userInput[i];
+
+      for (let j = 0; j < text.length; j++) {
+        await new Promise(resolve => setTimeout(resolve, 80));
+        if (text[j] === currentChar) {
+          matchedName += currentChar;
+          nameDisplay.textContent = matchedName;
+          break;
+        }
+      }
+    }
+  }
+
+  buildName(userInput, text);
+</script>
+
 </body>
 </html>
