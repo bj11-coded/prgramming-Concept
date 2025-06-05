@@ -237,6 +237,76 @@
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1161.2913760457238!2d83.46467138143423!3d27.699869121009556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3996879e9f400765%3A0xa008c1b332bbd44b!2sOM%20Sri%20Enterprises!5e1!3m2!1sen!2snp!4v1748399729482!5m2!1sen!2snp" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 
+<!-- form -->
+
+<h1>Form</h1>
+<p>form is used to collect the data and send it to other place</p>
+<p>
+Form is defined by the <code>&lt;form&gt;</code> tag</p>
+<p>Form has an attribute called action which is used to specify the URL to send the data to</p>
+<p> form has 3 method
+<p> method is used to specify how to send the data</p>
+<p> get method is used to send the data in the URL</p>
+<p> post method is used to send the data in the body of the request</p>
+<p> put method is used to update the data in the server</p>    
+</p>
+
+
+<form action="./about.html" method="post">
+
+    <label for="fname"> FirstName</label>
+    <input type="text" name="fname" id="fname" placeholder="Your first Name" required minlength="6"  maxlength="10" pattern="[A-Za-z]{6,10}">
+
+    <label for="">number</label>
+    <input type="number" name="" id="" placeholder="Enter your age" required min="18" max="60">
+
+
+    <label for=""> Email</label>
+    <input type="email">
+
+    <label for="">color</label>
+    <input type="color" name="" id="" required >
+
+    <label for="">date</label>
+    <input type="date" name="" id="" required >
+    
+    <br>
+    <label for="">telphone</label>
+    <input type="tel" name="" id="" placeholder="980000000" required>
+
+    <label for="">range</label>
+    <input type="range" name="" id="" value="80" required>
+
+    <label for="">radio</label>
+    <input type="radio" name="" id="" required>
+
+    <label for="">checkbox</label>
+    <input type="checkbox" name="" id=""  required >
+
+    <label for="">file</label>
+    <input type="file" name="" id="" required>
+
+
+    <label for="">weeks</label>
+    <input type="week" name="" id=""  required >
+
+    <label for="">time</label>
+    <input type="time" name="" id="" required >
+
+    <input type="button" name="" id=""  required value="Click Me">
+
+    <label for="">Month</label>
+    <input type="month" name="" id=""  required>
+
+    <label for="">url</label>
+    <input type="url" name="" id="" placeholder="Enter your age" required>
+
+    <label for=""> Password</label>
+
+    <input type="password" name="password" id="password" placeholder="enter your password" required pattern="[A-Za-z]{6,10}">
+    <input type="submit" >
+    <input type="reset">
+</form>
 
 </body>
 </html>

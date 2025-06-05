@@ -1,3 +1,5 @@
+
+
 def calculate_average(*args):
      if not args:
           return 0.0
