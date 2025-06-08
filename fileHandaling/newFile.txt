@@ -1,0 +1,2 @@
+This is a new file created using write function.
+i have added new line using append 'a' keyword
