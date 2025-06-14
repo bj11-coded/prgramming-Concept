@@ -57,3 +57,21 @@ print(dimNeg[0 ,-1])
 # negetive length calculates the last value 
 
 
+# copy vs view 
+# copy changes the orginal array 
+aryNew = num.array([12,34,3,12,32,4,52,4,2])
+print("---")
+
+xArry = aryNew.copy()
+# xArry = aryNew.view()
+xArry[0] = 23
+print(aryNew)
+print(xArry.base,"new Array") 
+
+# while using base with copy () it says None which means it doesnot print the base
+# while using base with view () it print the new Array 
+
+
+# Shape of an Array
+# The shape of an array is the number of elements in each dimension.
+#  ndim is used to shape the array 
