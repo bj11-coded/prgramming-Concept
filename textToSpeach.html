@@ -2,13 +2,10 @@
 <html>
 <body>
   <textarea id="text" rows="4" cols="50">Hello, this is text to speech!</textarea><br>
-  <button onclick="speak()">Speak</button>
+  <button >Speak</button>
 
   <script>
-    function speak() {
-      const msg = new SpeechSynthesisUtterance(document.getElementById('text').value);
-      window.speechSynthesis.speak(msg);
-    }
+   
   </script>
 </body>
 </html>
